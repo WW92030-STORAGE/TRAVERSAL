@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=3 uid="uid://mq7nqrnhuonq"]
+
+[ext_resource type="Script" uid="uid://y3uicoppuo0x" path="res://menu/level_selection.gd" id="1_486pq"]
+[ext_resource type="PackedScene" uid="uid://53abbuy4q1y" path="res://bg/bg_element.tscn" id="2_jfmtd"]
+[ext_resource type="Theme" uid="uid://dg0bvmeh02vbe" path="res://menu/UITheme.tres" id="2_tjhdm"]
+[ext_resource type="PackedScene" uid="uid://cdhn6vh2kepg7" path="res://menu/LVL_BTN_.tscn" id="4_fibdp"]
+
+[node name="LevelSelection" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_486pq")
+
+[node name="BGElement" parent="." instance=ExtResource("2_jfmtd")]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_tjhdm")
+theme_override_font_sizes/font_size = 100
+text = "
+"
+horizontal_alignment = 1
+
+[node name="LEVEL_NAME" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_tjhdm")
+theme_override_font_sizes/font_size = 160
+text = "SELECT LEVEL
+"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_tjhdm")
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+layout_mode = 2
+columns = 8
+
+[node name="LVL_BTN_1" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_2" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_3" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_4" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_5" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_6" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_7" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_8" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_9" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_10" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_11" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_12" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_13" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_14" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_15" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="LVL_BTN_16" parent="VBoxContainer/GridContainer" instance=ExtResource("4_fibdp")]
+layout_mode = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+autoplay = true

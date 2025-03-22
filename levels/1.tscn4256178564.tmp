@@ -1,0 +1,516 @@
+[gd_scene load_steps=8 format=3 uid="uid://dpw2hffc07otn"]
+
+[ext_resource type="Script" uid="uid://dpekjp2tt88p1" path="res://levels/Maintenance.gd" id="1_itw0v"]
+[ext_resource type="AudioStream" uid="uid://biqdqvk68nbrh" path="res://music/IMSLP_BUSONI.mp3" id="2_a1scl"]
+[ext_resource type="PackedScene" uid="uid://baoj6shrc8dx0" path="res://objects/Tile.tscn" id="3_2aftt"]
+[ext_resource type="PackedScene" uid="uid://53abbuy4q1y" path="res://bg/bg_element.tscn" id="4_725xe"]
+[ext_resource type="Theme" uid="uid://b1vdk3b571d7g" path="res://BLOCK_LABEL.tres" id="5_344tg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_itw0v"]
+size = Vector2(128, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1mo47"]
+size = Vector2(1088, 576)
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_itw0v")
+
+[node name="Explosion" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Explosion"]
+shape = SubResource("RectangleShape2D_itw0v")
+
+[node name="Tiles" type="Node2D" parent="."]
+
+[node name="Tile12" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(128, -64)
+
+[node name="Tile14" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(128, 0)
+
+[node name="Tile15" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(192, -64)
+
+[node name="Tile17" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(192, 0)
+
+[node name="Tile18" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(256, -64)
+
+[node name="Tile20" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(256, 0)
+
+[node name="Tile21" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(320, -64)
+
+[node name="Tile23" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(320, 0)
+metadata/END = true
+
+[node name="Tile24" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(128, 128)
+
+[node name="Tile25" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(128, 64)
+
+[node name="Tile26" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(128, 192)
+
+[node name="Tile27" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(192, 128)
+
+[node name="Tile28" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(192, 64)
+
+[node name="Tile29" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(192, 192)
+
+[node name="Tile30" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(256, 128)
+
+[node name="Tile31" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(256, 64)
+
+[node name="Tile32" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(256, 192)
+
+[node name="Tile33" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(320, 128)
+
+[node name="Tile34" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(320, 64)
+
+[node name="Tile35" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(320, 192)
+
+[node name="Tile36" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-128, 128)
+
+[node name="Tile37" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-128, 64)
+
+[node name="Tile38" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-128, 192)
+
+[node name="Tile39" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-64, 128)
+
+[node name="Tile41" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-64, 192)
+
+[node name="Tile42" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(0, 128)
+
+[node name="Tile44" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(0, 192)
+
+[node name="Tile45" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(64, 128)
+
+[node name="Tile47" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(64, 192)
+
+[node name="Tile48" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-256, -64)
+
+[node name="Tile50" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-256, 0)
+
+[node name="Tile51" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-192, -64)
+
+[node name="Tile53" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-192, 0)
+
+[node name="Tile60" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-256, 128)
+
+[node name="Tile61" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-256, 64)
+
+[node name="Tile62" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-256, 192)
+
+[node name="Tile63" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-192, 128)
+
+[node name="Tile64" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-192, 64)
+
+[node name="Tile65" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-192, 192)
+
+[node name="Tile66" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(128, 256)
+
+[node name="Tile67" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(192, 256)
+
+[node name="Tile68" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(256, 256)
+
+[node name="Tile69" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(320, 256)
+
+[node name="Tile70" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-128, 256)
+
+[node name="Tile71" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-64, 256)
+
+[node name="Tile72" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(0, 256)
+
+[node name="Tile73" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(64, 256)
+
+[node name="Tile74" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-256, 256)
+
+[node name="Tile75" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-192, 256)
+
+[node name="Tile76" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-384, -64)
+
+[node name="Tile78" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-384, 0)
+metadata/SOURCE = true
+
+[node name="Tile79" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-320, -64)
+
+[node name="Tile81" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-320, 0)
+
+[node name="Tile82" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-384, 128)
+
+[node name="Tile83" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-384, 64)
+
+[node name="Tile84" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-384, 192)
+
+[node name="Tile85" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-320, 128)
+
+[node name="Tile86" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-320, 64)
+
+[node name="Tile87" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-320, 192)
+
+[node name="Tile88" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-384, 256)
+
+[node name="Tile89" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-320, 256)
+
+[node name="Tile54" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-128, -64)
+
+[node name="Tile56" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-128, 0)
+
+[node name="Tile10" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(64, -128)
+
+[node name="Tile13" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(128, -128)
+
+[node name="Tile16" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(192, -128)
+
+[node name="Tile19" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(256, -128)
+
+[node name="Tile22" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(320, -128)
+
+[node name="Tile49" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-256, -128)
+
+[node name="Tile52" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-192, -128)
+
+[node name="Tile77" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-384, -128)
+
+[node name="Tile80" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-320, -128)
+
+[node name="Tile55" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-128, -128)
+
+[node name="Tile58" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-64, -128)
+
+[node name="Tile90" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(0, -128)
+
+[node name="Tile91" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(64, -192)
+
+[node name="Tile92" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(128, -192)
+
+[node name="Tile93" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(192, -192)
+
+[node name="Tile94" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(256, -192)
+
+[node name="Tile95" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(320, -192)
+
+[node name="Tile96" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-256, -192)
+
+[node name="Tile97" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-192, -192)
+
+[node name="Tile98" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-384, -192)
+
+[node name="Tile99" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-320, -192)
+
+[node name="Tile100" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-128, -192)
+
+[node name="Tile101" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-64, -192)
+
+[node name="Tile102" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(0, -192)
+
+[node name="Tile103" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(64, -256)
+
+[node name="Tile104" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(128, -256)
+
+[node name="Tile105" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(192, -256)
+
+[node name="Tile106" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(256, -256)
+
+[node name="Tile107" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(320, -256)
+
+[node name="Tile108" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-256, -256)
+
+[node name="Tile109" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-192, -256)
+
+[node name="Tile110" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-384, -256)
+
+[node name="Tile111" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-320, -256)
+
+[node name="Tile112" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-128, -256)
+
+[node name="Tile113" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-64, -256)
+
+[node name="Tile118" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-448, 128)
+
+[node name="Tile119" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-448, 64)
+
+[node name="Tile120" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-448, 192)
+
+[node name="Tile132" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-448, 256)
+
+[node name="Tile149" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-448, -64)
+
+[node name="Tile150" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-448, 0)
+
+[node name="Tile156" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-448, -128)
+
+[node name="Tile162" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-448, -192)
+
+[node name="Tile168" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(-448, -256)
+
+[node name="Tile223" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(320, 256)
+
+[node name="Tile115" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(384, -64)
+
+[node name="Tile116" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(384, 0)
+
+[node name="Tile117" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(448, -64)
+
+[node name="Tile121" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(448, 0)
+
+[node name="Tile122" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(384, 128)
+
+[node name="Tile123" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(384, 64)
+
+[node name="Tile124" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(384, 192)
+
+[node name="Tile125" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(448, 128)
+
+[node name="Tile126" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(448, 64)
+
+[node name="Tile127" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(448, 192)
+
+[node name="Tile128" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(384, 256)
+
+[node name="Tile129" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(448, 256)
+
+[node name="Tile130" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(384, -128)
+
+[node name="Tile131" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(448, -128)
+
+[node name="Tile133" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(384, -192)
+
+[node name="Tile134" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(448, -192)
+
+[node name="Tile135" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(384, -256)
+
+[node name="Tile136" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(448, -256)
+
+[node name="Tile224" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(448, 256)
+
+[node name="Tile114" parent="Tiles" instance=ExtResource("3_2aftt")]
+position = Vector2(0, -256)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Camera2D"]
+stream = ExtResource("2_a1scl")
+autoplay = true
+
+[node name="BGElement" parent="Camera2D" instance=ExtResource("4_725xe")]
+visible = false
+
+[node name="Screen" type="Area2D" parent="Camera2D"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/Screen"]
+shape = SubResource("RectangleShape2D_1mo47")
+
+[node name="UI" type="MarginContainer" parent="Camera2D"]
+visible = false
+offset_left = -568.0
+offset_top = -320.0
+offset_right = -248.0
+offset_bottom = -256.0
+
+[node name="TextureRect" type="ColorRect" parent="Camera2D/UI"]
+layout_mode = 2
+color = Color(0, 0, 0, 0.498039)
+
+[node name="CamData" type="Label" parent="Camera2D/UI"]
+layout_mode = 2
+theme = ExtResource("5_344tg")
+text = "TEST"
+horizontal_alignment = 1
+
+[node name="LevelCompleted" type="PanelContainer" parent="Camera2D"]
+visible = false
+offset_left = -584.0
+offset_top = -328.0
+offset_right = 584.0
+offset_bottom = 328.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Camera2D/LevelCompleted"]
+layout_mode = 2
+
+[node name="Pad3" type="Label" parent="Camera2D/LevelCompleted/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_344tg")
+theme_override_font_sizes/font_size = 128
+
+[node name="COMPLETE" type="Label" parent="Camera2D/LevelCompleted/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_344tg")
+theme_override_font_sizes/font_size = 256
+text = "LEVEL COMPLETE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Pad2" type="Label" parent="Camera2D/LevelCompleted/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_344tg")
+theme_override_font_sizes/font_size = 128
+
+[node name="TIME" type="Label" parent="Camera2D/LevelCompleted/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_344tg")
+theme_override_font_sizes/font_size = 128
+text = "TIME-000MS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CELLS" type="Label" parent="Camera2D/LevelCompleted/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_344tg")
+theme_override_font_sizes/font_size = 128
+text = "CELLS BROKEN-0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FLUID" type="Label" parent="Camera2D/LevelCompleted/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_344tg")
+theme_override_font_sizes/font_size = 128
+text = "FLUID TILES-0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RUN" type="Label" parent="Camera2D/LevelCompleted/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_344tg")
+theme_override_font_sizes/font_size = 128
+text = "LONGEST RUN-0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Pad" type="Label" parent="Camera2D/LevelCompleted/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_344tg")
+theme_override_font_sizes/font_size = 128
+
+[node name="COMPLETE2" type="Label" parent="Camera2D/LevelCompleted/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_344tg")
+theme_override_font_sizes/font_size = 256
+text = "PRESS R
+TO EXIT"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdhn6vh2kepg7"]
+
+[ext_resource type="Theme" uid="uid://dg0bvmeh02vbe" path="res://menu/UITheme.tres" id="1_it3e5"]
+[ext_resource type="Script" uid="uid://bav228hrtlh51" path="res://menu/LVL_BUTTON.gd" id="2_ga0wi"]
+
+[node name="LVL_BTN_" type="Button" groups=["LEVEL_BUTTON"]]
+size_flags_horizontal = 3
+theme = ExtResource("1_it3e5")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "01"
+script = ExtResource("2_ga0wi")
+metadata/FILTER = Color(1, 0, 0, 1)
+metadata/RETVAL = ""
+metadata/ARGS = ""
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

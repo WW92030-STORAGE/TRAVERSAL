@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj6sqi21plvk3"]
+
+[ext_resource type="Script" uid="uid://bi4wfkh3na85t" path="res://menu/title_menu.gd" id="1_jnkx4"]
+[ext_resource type="Theme" uid="uid://dg0bvmeh02vbe" path="res://menu/UITheme.tres" id="1_qbtvn"]
+
+[node name="TitleMenu" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jnkx4")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_qbtvn")
+text = "
+"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_qbtvn")
+text = "TRAVERSAL"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_qbtvn")
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 160
+text = "A GAME ABOUT FLUIDS"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_qbtvn")
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="ENTER" type="Button" parent="VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_qbtvn")
+text = "ENTER"
+
+[node name="QUIT" type="Button" parent="VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_qbtvn")
+text = "QUIT"
+
+[connection signal="pressed" from="VBoxContainer/GridContainer/ENTER" to="." method="_on_enter_pressed"]
+[connection signal="pressed" from="VBoxContainer/GridContainer/QUIT" to="." method="_on_quit_pressed"]

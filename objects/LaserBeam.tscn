@@ -1,0 +1,70 @@
+[gd_scene load_steps=9 format=3 uid="uid://bpoh7sx4hhhqi"]
+
+[ext_resource type="Script" uid="uid://cfq1o8r2dhq7j" path="res://objects/laser_beam.gd" id="1_f3d5a"]
+[ext_resource type="Texture2D" uid="uid://begw4i4hjjydn" path="res://sprites/BEAM.png" id="2_uedx4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7skff"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0o33j"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uedx4"]
+size = Vector2(8, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hapxj"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uf1h0"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e0owu"]
+size = Vector2(16, 16)
+
+[node name="LaserBeam" type="Node2D" groups=["POWER_TRANSMISSION"]]
+z_index = 1024
+script = ExtResource("1_f3d5a")
+metadata/NO_SYMBOL = true
+metadata/ORIGIN = NodePath("")
+metadata/DIR = Vector2i(0, 0)
+
+[node name="AreaX" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaX"]
+shape = SubResource("RectangleShape2D_7skff")
+
+[node name="R" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="R"]
+position = Vector2(32, 0)
+shape = SubResource("RectangleShape2D_0o33j")
+
+[node name="R2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="R2"]
+position = Vector2(64, 0)
+rotation = 0.785398
+shape = SubResource("RectangleShape2D_uedx4")
+
+[node name="U" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="U"]
+position = Vector2(0, -32)
+shape = SubResource("RectangleShape2D_hapxj")
+
+[node name="L" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="L"]
+position = Vector2(-32, 0)
+shape = SubResource("RectangleShape2D_uf1h0")
+
+[node name="D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="D"]
+position = Vector2(0, 32)
+shape = SubResource("RectangleShape2D_e0owu")
+
+[node name="Tex" type="Sprite2D" parent="." groups=["POWER_TRANSMISSION"]]
+modulate = Color(1, 0, 0, 0.74902)
+position = Vector2(-9.53674e-07, 1.43051e-06)
+texture = ExtResource("2_uedx4")

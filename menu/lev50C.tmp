@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://mq7nqrnhuonq"]
+
+[ext_resource type="Script" path="res://menu/level_selection.gd" id="1_486pq"]
+[ext_resource type="Theme" uid="uid://dg0bvmeh02vbe" path="res://menu/UITheme.tres" id="2_tjhdm"]
+[ext_resource type="Script" path="res://menu/LVL_BUTTON.gd" id="3_f6csb"]
+
+[node name="LevelSelection" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_486pq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0.25098, 0.25098, 0.25098, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_tjhdm")
+theme_override_font_sizes/font_size = 100
+text = "
+"
+horizontal_alignment = 1
+
+[node name="LEVEL_NAME" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_tjhdm")
+theme_override_font_sizes/font_size = 160
+text = "SELECT LEVEL
+"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_tjhdm")
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+layout_mode = 2
+columns = 8
+
+[node name="LVL_BTN_1" type="Button" parent="VBoxContainer/GridContainer" groups=["LEVEL_BUTTON"]]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_tjhdm")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "01"
+script = ExtResource("3_f6csb")
+
+[connection signal="mouse_entered" from="VBoxContainer/GridContainer/LVL_BTN_1" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/GridContainer/LVL_BTN_1" to="." method="_on_button_mouse_exited"]

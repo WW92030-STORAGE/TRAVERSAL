@@ -1,0 +1,1266 @@
+[gd_scene load_steps=9 format=3 uid="uid://dkcp6aye67xay"]
+
+[ext_resource type="Script" uid="uid://dpekjp2tt88p1" path="res://levels/Maintenance.gd" id="1_qswil"]
+[ext_resource type="Texture2D" uid="uid://den4v0sntfe3x" path="res://sprites/TRANSPARENT_FRAME_LIGHT.png" id="2_t6314"]
+[ext_resource type="PackedScene" uid="uid://baoj6shrc8dx0" path="res://objects/Tile.tscn" id="3_11a5i"]
+[ext_resource type="PackedScene" uid="uid://e43uy3w25l8x" path="res://viewport.tscn" id="7_qesyf"]
+[ext_resource type="PackedScene" uid="uid://bfxpp5jv34uko" path="res://objects/Laser.tscn" id="7_rf8q0"]
+[ext_resource type="PackedScene" uid="uid://bbktrpq6u14kd" path="res://objects/Boulder.tscn" id="8_nc42n"]
+[ext_resource type="PackedScene" uid="uid://sv2o1vbblkvc" path="res://objects/LaserBlocker.tscn" id="9_3gy48"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qlf6b"]
+size = Vector2(128, 128)
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_qswil")
+
+[node name="Explosion" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Explosion"]
+shape = SubResource("RectangleShape2D_qlf6b")
+
+[node name="Sprite2D" type="Sprite2D" parent="Explosion/CollisionShape2D"]
+top_level = true
+scale = Vector2(2, 2)
+texture = ExtResource("2_t6314")
+
+[node name="Tiles" type="Node2D" parent="."]
+
+[node name="Tile12" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, -64)
+
+[node name="Tile14" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, 0)
+
+[node name="Tile15" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, -64)
+
+[node name="Tile17" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, 0)
+
+[node name="Tile18" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, -64)
+
+[node name="Tile20" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, 0)
+
+[node name="Tile24" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, 128)
+
+[node name="Tile25" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, 64)
+
+[node name="Tile26" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, 192)
+
+[node name="Tile27" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, 128)
+
+[node name="Tile28" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, 64)
+
+[node name="Tile29" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, 192)
+
+[node name="Tile30" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, 128)
+
+[node name="Tile31" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, 64)
+
+[node name="Tile32" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, 192)
+
+[node name="Tile36" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, 128)
+
+[node name="Tile37" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, 64)
+
+[node name="Tile38" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, 192)
+
+[node name="Tile39" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, 128)
+
+[node name="Tile41" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, 192)
+
+[node name="Tile42" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, 128)
+
+[node name="Tile44" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, 192)
+
+[node name="Tile45" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, 128)
+
+[node name="Tile47" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, 192)
+
+[node name="Tile48" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, -64)
+
+[node name="Tile50" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, 0)
+
+[node name="Tile51" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, -64)
+
+[node name="Tile53" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, 0)
+
+[node name="Tile60" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, 128)
+
+[node name="Tile61" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, 64)
+
+[node name="Tile62" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, 192)
+
+[node name="Tile63" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, 128)
+
+[node name="Tile64" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, 64)
+
+[node name="Tile65" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, 192)
+
+[node name="Tile66" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, 256)
+
+[node name="Tile67" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, 256)
+
+[node name="Tile68" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, 256)
+
+[node name="Tile70" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, 256)
+
+[node name="Tile71" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, 256)
+
+[node name="Tile72" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, 256)
+
+[node name="Tile73" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, 256)
+
+[node name="Tile74" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, 256)
+
+[node name="Tile75" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, 256)
+
+[node name="Tile54" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, -64)
+
+[node name="Tile56" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, 0)
+
+[node name="Tile40" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-320, 64)
+
+[node name="Tile57" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-448, -64)
+
+[node name="Tile69" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-448, 0)
+
+[node name="Tile76" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-384, -64)
+
+[node name="Tile77" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-384, 0)
+
+[node name="Tile78" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-448, 64)
+
+[node name="Tile79" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-384, 64)
+
+[node name="Tile80" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-320, -64)
+
+[node name="Tile81" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-320, 0)
+
+[node name="Tile43" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, -320)
+
+[node name="Tile82" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, -448)
+
+[node name="Tile83" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, -384)
+
+[node name="Tile84" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, -448)
+
+[node name="Tile85" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, -384)
+
+[node name="Tile86" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, -320)
+
+[node name="Tile87" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, -320)
+
+[node name="Tile88" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, -448)
+
+[node name="Tile89" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, -384)
+
+[node name="Tile46" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(448, 64)
+
+[node name="Tile95" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(320, -64)
+
+[node name="Tile98" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(320, 0)
+
+[node name="Tile99" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(384, -64)
+
+[node name="Tile107" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(384, 0)
+
+[node name="Tile110" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(320, 64)
+
+[node name="Tile111" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(384, 64)
+
+[node name="Tile115" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(448, -64)
+
+[node name="Tile116" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(448, 0)
+
+[node name="Tile117" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, 448)
+
+[node name="Tile118" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, 320)
+
+[node name="Tile119" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, 384)
+
+[node name="Tile120" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, 320)
+
+[node name="Tile121" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, 384)
+
+[node name="Tile122" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, 448)
+
+[node name="Tile123" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, 448)
+
+[node name="Tile124" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, 320)
+
+[node name="Tile125" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, 384)
+
+[node name="Tile126" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, 640)
+
+[node name="Tile127" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, 512)
+
+[node name="Tile128" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, 576)
+
+[node name="Tile129" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, 512)
+
+[node name="Tile130" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, 576)
+
+[node name="Tile131" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, 640)
+
+[node name="Tile132" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, 640)
+
+[node name="Tile133" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, 512)
+
+[node name="Tile134" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, 576)
+
+[node name="Tile135" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, 64)
+
+[node name="Tile136" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -64)
+
+[node name="Tile144" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, 0)
+
+[node name="Tile145" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -64)
+
+[node name="Tile146" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, 0)
+
+[node name="Tile147" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, 64)
+
+[node name="Tile148" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, 64)
+
+[node name="Tile149" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -64)
+
+[node name="Tile150" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, 0)
+
+[node name="Tile250" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -128)
+
+[node name="Tile251" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -256)
+
+[node name="Tile252" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -192)
+
+[node name="Tile253" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -256)
+
+[node name="Tile254" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -192)
+
+[node name="Tile255" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -128)
+
+[node name="Tile256" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -128)
+
+[node name="Tile257" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -256)
+
+[node name="Tile258" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -192)
+
+[node name="Tile259" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -320)
+
+[node name="Tile260" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -448)
+
+[node name="Tile261" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -384)
+
+[node name="Tile262" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -448)
+
+[node name="Tile263" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -384)
+
+[node name="Tile264" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -320)
+
+[node name="Tile265" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -320)
+
+[node name="Tile266" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -448)
+
+[node name="Tile267" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -384)
+
+[node name="Tile268" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, -512)
+
+[node name="Tile269" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, -640)
+
+[node name="Tile270" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, -576)
+
+[node name="Tile271" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, -640)
+
+[node name="Tile272" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, -576)
+
+[node name="Tile273" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, -512)
+
+[node name="Tile274" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, -512)
+
+[node name="Tile275" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, -640)
+
+[node name="Tile276" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, -576)
+
+[node name="Tile277" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-320, -512)
+
+[node name="Tile278" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-448, -640)
+
+[node name="Tile279" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-448, -576)
+
+[node name="Tile280" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-384, -640)
+
+[node name="Tile281" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-384, -576)
+
+[node name="Tile282" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-448, -512)
+
+[node name="Tile283" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-384, -512)
+
+[node name="Tile284" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-320, -640)
+
+[node name="Tile285" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-320, -576)
+
+[node name="Tile151" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 64)
+
+[node name="Tile152" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, -64)
+
+[node name="Tile153" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 0)
+
+[node name="Tile154" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, -64)
+
+[node name="Tile155" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 0)
+
+[node name="Tile156" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 64)
+
+[node name="Tile157" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 64)
+
+[node name="Tile158" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, -64)
+
+[node name="Tile159" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 0)
+
+[node name="Tile160" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, -512)
+
+[node name="Tile161" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, -640)
+
+[node name="Tile162" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, -576)
+
+[node name="Tile163" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, -640)
+
+[node name="Tile164" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, -576)
+
+[node name="Tile165" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, -512)
+
+[node name="Tile166" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, -512)
+
+[node name="Tile167" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, -640)
+
+[node name="Tile168" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, -576)
+
+[node name="Tile10" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, -128)
+
+[node name="Tile13" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, -128)
+
+[node name="Tile16" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, -128)
+
+[node name="Tile19" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, -128)
+
+[node name="Tile49" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, -128)
+
+[node name="Tile52" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, -128)
+
+[node name="Tile55" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, -128)
+
+[node name="Tile58" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, -128)
+
+[node name="Tile90" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, -128)
+
+[node name="Tile91" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, -192)
+
+[node name="Tile92" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, -192)
+
+[node name="Tile93" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, -192)
+
+[node name="Tile94" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, -192)
+
+[node name="Tile96" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, -192)
+
+[node name="Tile97" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, -192)
+
+[node name="Tile100" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, -192)
+
+[node name="Tile101" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, -192)
+
+[node name="Tile102" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, -192)
+
+[node name="Tile103" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, -256)
+
+[node name="Tile104" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, -256)
+
+[node name="Tile105" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, -256)
+
+[node name="Tile106" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, -256)
+
+[node name="Tile108" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-256, -256)
+
+[node name="Tile109" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-192, -256)
+
+[node name="Tile112" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-128, -256)
+
+[node name="Tile169" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -512)
+
+[node name="Tile170" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -512)
+
+[node name="Tile171" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -512)
+
+[node name="Tile172" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -576)
+
+[node name="Tile173" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -576)
+
+[node name="Tile174" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -576)
+
+[node name="Tile175" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -640)
+
+[node name="Tile176" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -640)
+
+[node name="Tile177" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -640)
+
+[node name="Tile178" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-832, -512)
+
+[node name="Tile179" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-768, -512)
+
+[node name="Tile180" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-704, -512)
+
+[node name="Tile181" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-832, -576)
+
+[node name="Tile182" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-768, -576)
+
+[node name="Tile183" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-704, -576)
+
+[node name="Tile184" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-832, -640)
+
+[node name="Tile185" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-768, -640)
+
+[node name="Tile186" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-704, -640)
+
+[node name="Tile187" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -704)
+
+[node name="Tile188" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -704)
+
+[node name="Tile189" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -704)
+
+[node name="Tile190" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -768)
+
+[node name="Tile191" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -768)
+
+[node name="Tile192" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -768)
+
+[node name="Tile193" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -832)
+
+[node name="Tile194" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -832)
+
+[node name="Tile195" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -832)
+
+[node name="Tile205" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-1024, -512)
+
+[node name="Tile206" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-960, -512)
+
+[node name="Tile207" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-896, -512)
+
+[node name="Tile208" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-1024, -576)
+
+[node name="Tile209" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-960, -576)
+
+[node name="Tile210" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-896, -576)
+
+[node name="Tile211" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-1024, -640)
+
+[node name="Tile212" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-960, -640)
+
+[node name="Tile213" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-896, -640)
+
+[node name="Tile214" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-1024, -704)
+
+[node name="Tile215" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-960, -704)
+
+[node name="Tile216" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-896, -704)
+
+[node name="Tile217" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-1024, -768)
+
+[node name="Tile218" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-960, -768)
+
+[node name="Tile219" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-896, -768)
+
+[node name="Tile220" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-1024, -832)
+
+[node name="Tile221" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-960, -832)
+
+[node name="Tile222" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-896, -832)
+
+[node name="Tile223" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -896)
+
+[node name="Tile224" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -896)
+
+[node name="Tile225" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -896)
+
+[node name="Tile226" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -960)
+
+[node name="Tile227" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -960)
+
+[node name="Tile228" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -960)
+
+[node name="Tile229" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-640, -1024)
+
+[node name="Tile230" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-576, -1024)
+
+[node name="Tile231" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-512, -1024)
+
+[node name="Tile232" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-832, -896)
+
+[node name="Tile233" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-768, -896)
+
+[node name="Tile234" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-704, -896)
+
+[node name="Tile235" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-832, -960)
+
+[node name="Tile236" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-768, -960)
+
+[node name="Tile237" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-704, -960)
+
+[node name="Tile238" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-832, -1024)
+
+[node name="Tile239" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-768, -1024)
+
+[node name="Tile240" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-704, -1024)
+
+[node name="Tile241" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-1024, -896)
+
+[node name="Tile242" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-960, -896)
+
+[node name="Tile243" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-896, -896)
+
+[node name="Tile244" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-1024, -960)
+
+[node name="Tile245" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-960, -960)
+metadata/END = true
+
+[node name="Tile246" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-896, -960)
+
+[node name="Tile247" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-1024, -1024)
+
+[node name="Tile248" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-960, -1024)
+
+[node name="Tile249" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-896, -1024)
+
+[node name="Tile286" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 448)
+
+[node name="Tile287" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 320)
+
+[node name="Tile288" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 384)
+
+[node name="Tile289" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 320)
+
+[node name="Tile290" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 384)
+
+[node name="Tile291" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 448)
+
+[node name="Tile292" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 448)
+
+[node name="Tile293" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 320)
+
+[node name="Tile294" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 384)
+
+[node name="Tile295" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 256)
+
+[node name="Tile296" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 128)
+
+[node name="Tile297" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 192)
+
+[node name="Tile298" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 128)
+
+[node name="Tile299" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 192)
+
+[node name="Tile300" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 256)
+
+[node name="Tile301" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 256)
+
+[node name="Tile302" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 128)
+
+[node name="Tile303" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 192)
+
+[node name="Tile304" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(448, 640)
+
+[node name="Tile305" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(320, 512)
+
+[node name="Tile306" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(320, 576)
+
+[node name="Tile307" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(384, 512)
+
+[node name="Tile308" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(384, 576)
+
+[node name="Tile309" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(320, 640)
+
+[node name="Tile310" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(384, 640)
+
+[node name="Tile311" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(448, 512)
+
+[node name="Tile312" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(448, 576)
+
+[node name="Tile313" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, 640)
+
+[node name="Tile314" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, 512)
+
+[node name="Tile315" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, 576)
+
+[node name="Tile316" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, 512)
+
+[node name="Tile317" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, 576)
+
+[node name="Tile318" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(128, 640)
+
+[node name="Tile319" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(192, 640)
+
+[node name="Tile320" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, 512)
+
+[node name="Tile321" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(256, 576)
+
+[node name="Tile322" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(896, 1024)
+
+[node name="Tile323" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(960, 1024)
+
+[node name="Tile324" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1024, 1024)
+metadata/END = true
+
+[node name="Tile325" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(896, 960)
+
+[node name="Tile326" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(960, 960)
+
+[node name="Tile327" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1024, 960)
+
+[node name="Tile328" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(896, 896)
+
+[node name="Tile329" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(960, 896)
+
+[node name="Tile330" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1024, 896)
+
+[node name="Tile331" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(704, 1024)
+
+[node name="Tile333" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(832, 1024)
+
+[node name="Tile334" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(704, 960)
+
+[node name="Tile336" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(832, 960)
+
+[node name="Tile337" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(704, 896)
+
+[node name="Tile339" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(832, 896)
+
+[node name="Tile332" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(896, 1216)
+
+[node name="Tile335" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(960, 1216)
+
+[node name="Tile338" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1024, 1216)
+
+[node name="Tile343" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(896, 1152)
+
+[node name="Tile344" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(960, 1152)
+
+[node name="Tile345" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1024, 1152)
+
+[node name="Tile350" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(896, 1088)
+
+[node name="Tile353" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(960, 1088)
+
+[node name="Tile354" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1024, 1088)
+
+[node name="Tile403" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(832, 1216)
+
+[node name="Tile404" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(832, 1152)
+
+[node name="Tile405" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(832, 1088)
+
+[node name="Tile340" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(896, 832)
+
+[node name="Tile341" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(960, 832)
+
+[node name="Tile342" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1024, 832)
+
+[node name="Tile406" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1088, 1024)
+
+[node name="Tile407" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1152, 1024)
+
+[node name="Tile408" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1216, 1024)
+
+[node name="Tile409" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1088, 960)
+
+[node name="Tile410" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1152, 960)
+
+[node name="Tile411" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1216, 960)
+
+[node name="Tile412" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1088, 896)
+
+[node name="Tile413" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1152, 896)
+
+[node name="Tile414" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1216, 896)
+
+[node name="Tile415" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1088, 1216)
+
+[node name="Tile416" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1152, 1216)
+
+[node name="Tile417" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1216, 1216)
+
+[node name="Tile418" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1088, 1152)
+
+[node name="Tile419" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1152, 1152)
+
+[node name="Tile420" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1216, 1152)
+
+[node name="Tile421" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1088, 1088)
+
+[node name="Tile422" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1152, 1088)
+
+[node name="Tile423" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1216, 1088)
+
+[node name="Tile424" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1088, 832)
+
+[node name="Tile425" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1152, 832)
+
+[node name="Tile426" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1216, 832)
+
+[node name="Tile346" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(896, 704)
+
+[node name="Tile347" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(960, 704)
+
+[node name="Tile348" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1024, 704)
+
+[node name="Tile349" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(704, 832)
+
+[node name="Tile351" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(832, 832)
+
+[node name="Tile352" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(704, 768)
+
+[node name="Tile355" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(704, 704)
+
+[node name="Tile356" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(768, 704)
+
+[node name="Tile357" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(832, 704)
+
+[node name="Tile358" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 1024)
+
+[node name="Tile359" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 1024)
+
+[node name="Tile360" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 1024)
+
+[node name="Tile361" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 960)
+
+[node name="Tile362" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 960)
+
+[node name="Tile363" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 960)
+
+[node name="Tile364" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 896)
+
+[node name="Tile365" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 896)
+
+[node name="Tile366" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 896)
+
+[node name="Tile367" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 832)
+
+[node name="Tile368" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 832)
+
+[node name="Tile369" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 832)
+
+[node name="Tile370" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 768)
+
+[node name="Tile371" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 768)
+
+[node name="Tile372" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 768)
+
+[node name="Tile373" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 704)
+
+[node name="Tile374" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 704)
+
+[node name="Tile375" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 704)
+
+[node name="Tile376" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(896, 640)
+
+[node name="Tile377" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(960, 640)
+
+[node name="Tile378" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1024, 640)
+
+[node name="Tile379" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(896, 576)
+
+[node name="Tile380" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(960, 576)
+
+[node name="Tile381" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1024, 576)
+
+[node name="Tile382" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(896, 512)
+
+[node name="Tile383" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(960, 512)
+
+[node name="Tile384" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(1024, 512)
+
+[node name="Tile385" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(704, 640)
+
+[node name="Tile386" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(768, 640)
+
+[node name="Tile387" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(832, 640)
+
+[node name="Tile388" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(704, 576)
+
+[node name="Tile389" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(768, 576)
+
+[node name="Tile390" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(832, 576)
+
+[node name="Tile391" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(704, 512)
+
+[node name="Tile392" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(768, 512)
+
+[node name="Tile393" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(832, 512)
+
+[node name="Tile394" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 640)
+
+[node name="Tile395" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 640)
+
+[node name="Tile396" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 640)
+
+[node name="Tile397" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 576)
+
+[node name="Tile398" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 576)
+
+[node name="Tile399" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 576)
+
+[node name="Tile400" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(512, 512)
+
+[node name="Tile401" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(576, 512)
+
+[node name="Tile402" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(640, 512)
+
+[node name="Tile113" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, -256)
+
+[node name="Tile114" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, -256)
+
+[node name="Tile11" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, 64)
+
+[node name="Tile59" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, 64)
+
+[node name="Tile137" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, 64)
+
+[node name="Tile138" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, 0)
+
+[node name="Tile139" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, 0)
+
+[node name="Tile140" parent="Tiles" instance=ExtResource("3_11a5i")]
+metadata/SOURCE = true
+
+[node name="Tile141" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(64, -64)
+
+[node name="Tile142" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(-64, -64)
+
+[node name="Tile143" parent="Tiles" instance=ExtResource("3_11a5i")]
+position = Vector2(0, -64)
+
+[node name="Laser" parent="." instance=ExtResource("7_rf8q0")]
+position = Vector2(768, 1024)
+rotation = -1.5708
+
+[node name="Laser2" parent="." instance=ExtResource("7_rf8q0")]
+position = Vector2(1024, 768)
+rotation = 3.14159
+
+[node name="Boulder" parent="." instance=ExtResource("8_nc42n")]
+position = Vector2(768, 960)
+
+[node name="Boulder2" parent="." instance=ExtResource("8_nc42n")]
+position = Vector2(768, 896)
+
+[node name="Boulder3" parent="." instance=ExtResource("8_nc42n")]
+position = Vector2(768, 832)
+
+[node name="Boulder5" parent="." instance=ExtResource("8_nc42n")]
+position = Vector2(832, 768)
+
+[node name="Boulder6" parent="." instance=ExtResource("8_nc42n")]
+position = Vector2(896, 768)
+
+[node name="Boulder7" parent="." instance=ExtResource("8_nc42n")]
+position = Vector2(960, 768)
+
+[node name="LaserBlocker" parent="." instance=ExtResource("9_3gy48")]
+position = Vector2(768, 768)
+
+[node name="Viewport" parent="." instance=ExtResource("7_qesyf")]
