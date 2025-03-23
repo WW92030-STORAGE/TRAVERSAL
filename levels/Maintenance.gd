@@ -51,7 +51,7 @@ func _process(delta: float) -> void:
 		
 	if Input.is_key_pressed(KEY_F):
 		if not FP:
-			GlobalVariables.PULSE_TILES = not GlobalVariables.PULSE_TILES
+			GlobalVariables.PULSE_CONFIG = (GlobalVariables.PULSE_CONFIG + 1) % 4
 			FP = true
 	else:
 		FP = false
@@ -124,7 +124,7 @@ func _process(delta: float) -> void:
 		resetOnScreenTiles()
 		
 	# Set the camera data
-	$Viewport/UI/CamData.text = GlobalVariables.CAM_INFO
+	$Viewport/UI/Data.text = GlobalVariables.CAM_INFO
 	changeConfig()
 	
 	# End the level

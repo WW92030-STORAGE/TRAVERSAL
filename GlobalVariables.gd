@@ -7,7 +7,9 @@ var VOLZEROTIMER = 0
 var VOL_RUN = []
 var MAX_VOL_RUN = 16
 
+var PULSE_CONFIG = 0
 var PULSE_TILES = false # Do we pulse the tiles you link together (i.e. not mechanisms and other special tiles)
+var PULSE_MECHS = false # Do we pulse the mechanisms?
 
 # Dimensions and constants 
 
@@ -56,7 +58,7 @@ var LONGEST_RUN = 0
 
 # Levels
 
-var LEVELS = ["INTRODUCTION", "TREK", "LASERS", "EXPANSION", "VERTICALITY", "CONCURRENT", "BARRIER", "TIDE"]
+var LEVELS = ["PRELUDE", "TREK", "LASERS", "EXPANSION", "VERTICALITY", "CONCURRENT", "BARRIER", "INTERLEAVE"]
 var BG = ""
 
 # Called when the node enters the scene tree for the first time.
@@ -71,6 +73,10 @@ func CHECKQUIT():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	PULSE_TILES = not (PULSE_CONFIG % 2 == 0)
+	PULSE_MECHS = not (PULSE_CONFIG % 4 < 2)
+	
+	
 	RAINBOW = (RAINBOW + 1) % (256 * 6)
 	RAINBOW_COLOR = GlobalVariables.FullHue(GlobalVariables.RAINBOW)
 	

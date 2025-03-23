@@ -21,7 +21,7 @@ func _ready() -> void:
 		set_meta("DIR", Vector2i(1, 0))
 
 func _process(delta):
-	$Symbol.scale = Vector2(1, 1) * lerp(0.1, 0.9, GlobalVariables.VOLUME)
+	pulseSymbol()
 
 func _physics_process(delta: float) -> void:
 	

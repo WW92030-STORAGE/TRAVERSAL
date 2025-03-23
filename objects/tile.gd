@@ -33,6 +33,12 @@ func isMechanism():
 		return true
 	return not (isNormalTile or SYMBOL == DEAD_SYMBOL or SYMBOL == BLOCKER_SYMBOL or SYMBOL == LASER_BLOCK)
 
+func isSpecial():
+	return self.get_meta("END") or self is Laser or self is LaserBlocker
+	
+func isMechOrSpecial():
+	return isMechanism() or isSpecial()
+
 func hasLaser():
 	for body in $Area2D.get_overlapping_areas():
 		if body.get_parent() is LaserBeam:
@@ -85,11 +91,16 @@ func getLinkedLayers():
 static func randomSymbol():
 	return randi_range(0, -1 + len(GlobalVariables.SYMBOLS))
 
-func _process(delta):
-	if GlobalVariables.PULSE_TILES or isMechanism():
+func pulseSymbol():
+	if GlobalVariables.PULSE_TILES and not isMechOrSpecial():
+		$Symbol.scale = Vector2(1, 1) * lerp(0.1, 0.9, GlobalVariables.VOLUME)
+	elif GlobalVariables.PULSE_MECHS and isMechOrSpecial():
 		$Symbol.scale = Vector2(1, 1) * lerp(0.1, 0.9, GlobalVariables.VOLUME)
 	else:
 		$Symbol.scale = Vector2(0.5, 0.5)
+
+func _process(delta):
+	pulseSymbol()
 	var LAYERS = get_meta("LAYERS")
 	var FLUID = get_meta("FLUID")
 	var SOURCE = get_meta("SOURCE")

@@ -459,30 +459,39 @@ position = Vector2(1344, -320)
 
 [node name="Tile30" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1408, 320)
+metadata/LAYERS = 2
 
 [node name="Tile78" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1280, 320)
+metadata/LAYERS = 2
 
 [node name="Tile238" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1344, 320)
+metadata/LAYERS = 2
 
 [node name="Tile239" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1408, 192)
+metadata/LAYERS = 2
 
 [node name="Tile240" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1280, 192)
+metadata/LAYERS = 2
 
 [node name="Tile241" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1344, 192)
+metadata/LAYERS = 2
 
 [node name="Tile242" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1408, 128)
+metadata/LAYERS = 2
 
 [node name="Tile243" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1280, 128)
+metadata/LAYERS = 2
 
 [node name="Tile244" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1344, 128)
+metadata/LAYERS = 2
 
 [node name="Tile31" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1600, -128)
@@ -513,30 +522,39 @@ position = Vector2(1536, -320)
 
 [node name="Tile32" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1600, 320)
+metadata/LAYERS = 2
 
 [node name="Tile80" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1472, 320)
+metadata/LAYERS = 2
 
 [node name="Tile252" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1536, 320)
+metadata/LAYERS = 2
 
 [node name="Tile253" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1600, 192)
+metadata/LAYERS = 2
 
 [node name="Tile254" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1472, 192)
+metadata/LAYERS = 2
 
 [node name="Tile255" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1536, 192)
+metadata/LAYERS = 2
 
 [node name="Tile256" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1600, 128)
+metadata/LAYERS = 2
 
 [node name="Tile257" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1472, 128)
+metadata/LAYERS = 2
 
 [node name="Tile258" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1536, 128)
+metadata/LAYERS = 2
 
 [node name="Boulder7" parent="Tiles" instance=ExtResource("4_pi35f")]
 position = Vector2(1216, 128)
@@ -558,30 +576,39 @@ position = Vector2(1664, -128)
 
 [node name="Tile33" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1856, -128)
+metadata/LAYERS = 2
 
 [node name="Tile81" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1728, -128)
+metadata/LAYERS = 2
 
 [node name="Tile259" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1792, -128)
+metadata/LAYERS = 2
 
 [node name="Tile260" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1856, -192)
+metadata/LAYERS = 2
 
 [node name="Tile261" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1728, -192)
+metadata/LAYERS = 2
 
 [node name="Tile262" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1792, -192)
+metadata/LAYERS = 2
 
 [node name="Tile263" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1856, -320)
+metadata/LAYERS = 2
 
 [node name="Tile264" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1728, -320)
+metadata/LAYERS = 2
 
 [node name="Tile265" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1792, -320)
+metadata/LAYERS = 2
 
 [node name="Tile34" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1856, 320)
@@ -612,30 +639,39 @@ position = Vector2(1792, 128)
 
 [node name="Tile35" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2048, -128)
+metadata/LAYERS = 2
 
 [node name="Tile83" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1920, -128)
+metadata/LAYERS = 2
 
 [node name="Tile273" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1984, -128)
+metadata/LAYERS = 2
 
 [node name="Tile274" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2048, -192)
+metadata/LAYERS = 2
 
 [node name="Tile275" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1920, -192)
+metadata/LAYERS = 2
 
 [node name="Tile276" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1984, -192)
+metadata/LAYERS = 2
 
 [node name="Tile277" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2048, -320)
+metadata/LAYERS = 2
 
 [node name="Tile278" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1920, -320)
+metadata/LAYERS = 2
 
 [node name="Tile279" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1984, -320)
+metadata/LAYERS = 2
 
 [node name="Tile36" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2048, 320)
@@ -709,30 +745,39 @@ position = Vector2(2240, -320)
 
 [node name="Tile38" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2304, 320)
+metadata/LAYERS = 3
 
 [node name="Tile86" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2176, 320)
+metadata/LAYERS = 3
 
 [node name="Tile298" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2240, 320)
+metadata/LAYERS = 3
 
 [node name="Tile299" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2304, 192)
+metadata/LAYERS = 3
 
 [node name="Tile300" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2176, 192)
+metadata/LAYERS = 3
 
 [node name="Tile301" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2240, 192)
+metadata/LAYERS = 3
 
 [node name="Tile302" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2304, 128)
+metadata/LAYERS = 3
 
 [node name="Tile303" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2176, 128)
+metadata/LAYERS = 3
 
 [node name="Tile304" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2240, 128)
+metadata/LAYERS = 3
 
 [node name="Tile39" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2496, -128)
@@ -763,58 +808,76 @@ position = Vector2(2432, -320)
 
 [node name="Tile41" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2752, -128)
+metadata/LAYERS = 3
 
 [node name="Tile89" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2624, -128)
+metadata/LAYERS = 3
 
 [node name="Tile319" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2688, -128)
+metadata/LAYERS = 3
 
 [node name="Tile320" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2752, -192)
+metadata/LAYERS = 3
 
 [node name="Tile321" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2624, -192)
+metadata/LAYERS = 3
 
 [node name="Tile322" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2688, -192)
+metadata/LAYERS = 3
 
 [node name="Tile323" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2752, -320)
+metadata/LAYERS = 3
 
 [node name="Tile324" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2624, -320)
+metadata/LAYERS = 3
 
 [node name="Tile325" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2688, -320)
+metadata/LAYERS = 3
 
 [node name="Tile42" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2944, -128)
+metadata/LAYERS = 3
 
 [node name="Tile326" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2816, -128)
+metadata/LAYERS = 3
 
 [node name="Tile327" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2880, -128)
+metadata/LAYERS = 3
 
 [node name="Tile328" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2944, -192)
+metadata/LAYERS = 3
 
 [node name="Tile329" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2816, -192)
+metadata/LAYERS = 3
 
 [node name="Tile330" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2880, -192)
+metadata/LAYERS = 3
 metadata/END = true
 
 [node name="Tile331" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2944, -320)
+metadata/LAYERS = 3
 
 [node name="Tile332" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2816, -320)
+metadata/LAYERS = 3
 
 [node name="Tile333" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2880, -320)
+metadata/LAYERS = 3
 
 [node name="Tile43" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2752, 320)
@@ -873,30 +936,39 @@ position = Vector2(2880, 128)
 
 [node name="Tile40" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2496, 320)
+metadata/LAYERS = 3
 
 [node name="Tile88" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2368, 320)
+metadata/LAYERS = 3
 
 [node name="Tile312" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2432, 320)
+metadata/LAYERS = 3
 
 [node name="Tile313" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2496, 192)
+metadata/LAYERS = 3
 
 [node name="Tile314" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2368, 192)
+metadata/LAYERS = 3
 
 [node name="Tile315" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2432, 192)
+metadata/LAYERS = 3
 
 [node name="Tile316" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2496, 128)
+metadata/LAYERS = 3
 
 [node name="Tile317" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2368, 128)
+metadata/LAYERS = 3
 
 [node name="Tile318" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2432, 128)
+metadata/LAYERS = 3
 
 [node name="Boulder13" parent="Tiles" instance=ExtResource("4_pi35f")]
 position = Vector2(2112, 128)
@@ -959,21 +1031,27 @@ position = Vector2(1088, 64)
 
 [node name="Tile522" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1408, 64)
+metadata/LAYERS = 2
 
 [node name="Tile523" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1280, 64)
+metadata/LAYERS = 2
 
 [node name="Tile524" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1344, 64)
+metadata/LAYERS = 2
 
 [node name="Tile525" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1600, 64)
+metadata/LAYERS = 2
 
 [node name="Tile526" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1472, 64)
+metadata/LAYERS = 2
 
 [node name="Tile527" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1536, 64)
+metadata/LAYERS = 2
 
 [node name="Boulder29" parent="Tiles" instance=ExtResource("4_pi35f")]
 position = Vector2(1216, 64)
@@ -1002,12 +1080,15 @@ position = Vector2(1984, 64)
 
 [node name="Tile535" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2304, 64)
+metadata/LAYERS = 3
 
 [node name="Tile536" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2176, 64)
+metadata/LAYERS = 3
 
 [node name="Tile537" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2240, 64)
+metadata/LAYERS = 3
 
 [node name="Tile538" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2752, 64)
@@ -1029,12 +1110,15 @@ position = Vector2(2880, 64)
 
 [node name="Tile544" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2496, 64)
+metadata/LAYERS = 3
 
 [node name="Tile545" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2368, 64)
+metadata/LAYERS = 3
 
 [node name="Tile546" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2432, 64)
+metadata/LAYERS = 3
 
 [node name="Boulder30" parent="Tiles" instance=ExtResource("4_pi35f")]
 position = Vector2(2112, 64)
@@ -1106,21 +1190,27 @@ position = Vector2(1088, 256)
 
 [node name="Tile471" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1408, 256)
+metadata/LAYERS = 2
 
 [node name="Tile472" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1280, 256)
+metadata/LAYERS = 2
 
 [node name="Tile473" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1344, 256)
+metadata/LAYERS = 2
 
 [node name="Tile474" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1600, 256)
+metadata/LAYERS = 2
 
 [node name="Tile475" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1472, 256)
+metadata/LAYERS = 2
 
 [node name="Tile476" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1536, 256)
+metadata/LAYERS = 2
 
 [node name="Boulder26" parent="Tiles" instance=ExtResource("4_pi35f")]
 position = Vector2(1216, 256)
@@ -1149,12 +1239,15 @@ position = Vector2(1984, 256)
 
 [node name="Tile484" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2304, 256)
+metadata/LAYERS = 3
 
 [node name="Tile485" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2176, 256)
+metadata/LAYERS = 3
 
 [node name="Tile486" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2240, 256)
+metadata/LAYERS = 3
 
 [node name="Tile487" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2752, 256)
@@ -1176,12 +1269,15 @@ position = Vector2(2880, 256)
 
 [node name="Tile493" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2496, 256)
+metadata/LAYERS = 3
 
 [node name="Tile494" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2368, 256)
+metadata/LAYERS = 3
 
 [node name="Tile495" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2432, 256)
+metadata/LAYERS = 3
 
 [node name="Boulder27" parent="Tiles" instance=ExtResource("4_pi35f")]
 position = Vector2(2112, 256)
@@ -1322,21 +1418,27 @@ position = Vector2(1664, -256)
 
 [node name="Tile423" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1856, -256)
+metadata/LAYERS = 2
 
 [node name="Tile424" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1728, -256)
+metadata/LAYERS = 2
 
 [node name="Tile425" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1792, -256)
+metadata/LAYERS = 2
 
 [node name="Tile426" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2048, -256)
+metadata/LAYERS = 2
 
 [node name="Tile427" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1920, -256)
+metadata/LAYERS = 2
 
 [node name="Tile428" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1984, -256)
+metadata/LAYERS = 2
 
 [node name="Tile429" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2112, -256)
@@ -1362,21 +1464,27 @@ position = Vector2(2432, -256)
 
 [node name="Tile436" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2752, -256)
+metadata/LAYERS = 3
 
 [node name="Tile437" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2624, -256)
+metadata/LAYERS = 3
 
 [node name="Tile438" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2688, -256)
+metadata/LAYERS = 3
 
 [node name="Tile439" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2944, -256)
+metadata/LAYERS = 3
 
 [node name="Tile440" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2816, -256)
+metadata/LAYERS = 3
 
 [node name="Tile441" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2880, -256)
+metadata/LAYERS = 3
 
 [node name="Boulder24" parent="Tiles" instance=ExtResource("4_pi35f")]
 position = Vector2(2560, -256)
@@ -1460,21 +1568,27 @@ position = Vector2(1664, -64)
 
 [node name="Tile55" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1856, -64)
+metadata/LAYERS = 2
 
 [node name="Tile372" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1728, -64)
+metadata/LAYERS = 2
 
 [node name="Tile373" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1792, -64)
+metadata/LAYERS = 2
 
 [node name="Tile56" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2048, -64)
+metadata/LAYERS = 2
 
 [node name="Tile374" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1920, -64)
+metadata/LAYERS = 2
 
 [node name="Tile375" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(1984, -64)
+metadata/LAYERS = 2
 
 [node name="Tile376" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2112, -64)
@@ -1500,15 +1614,19 @@ position = Vector2(2432, -64)
 
 [node name="Tile382" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2752, -64)
+metadata/LAYERS = 3
 
 [node name="Tile383" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2624, -64)
+metadata/LAYERS = 3
 
 [node name="Tile384" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2688, -64)
+metadata/LAYERS = 3
 
 [node name="Tile385" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2944, -64)
+metadata/LAYERS = 3
 
 [node name="Tile559" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(3008, -128)
@@ -1542,9 +1660,11 @@ position = Vector2(3008, -64)
 
 [node name="Tile386" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2816, -64)
+metadata/LAYERS = 3
 
 [node name="Tile387" parent="Tiles" instance=ExtResource("3_sdfxh")]
 position = Vector2(2880, -64)
+metadata/LAYERS = 3
 
 [node name="Boulder21" parent="Tiles" instance=ExtResource("4_pi35f")]
 position = Vector2(2560, -64)

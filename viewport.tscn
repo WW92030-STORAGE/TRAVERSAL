@@ -25,7 +25,6 @@ visible = false
 shape = SubResource("RectangleShape2D_1mo47")
 
 [node name="UI" type="MarginContainer" parent="."]
-visible = false
 offset_left = -624.0
 offset_top = -352.0
 offset_right = -240.0
@@ -35,7 +34,7 @@ offset_bottom = -288.0
 layout_mode = 2
 color = Color(0, 0, 0, 0.498039)
 
-[node name="CamData" type="Label" parent="UI"]
+[node name="Data" type="Label" parent="UI"]
 layout_mode = 2
 theme = ExtResource("3_basdp")
 text = "TEST"

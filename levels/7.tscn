@@ -701,51 +701,66 @@ position = Vector2(1216, -384)
 
 [node name="Tile578" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1280, -384)
+metadata/LAYERS = 2
 
 [node name="Tile194" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1216, -448)
 
 [node name="Tile516" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1280, -320)
+metadata/LAYERS = 2
 
 [node name="Tile369" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1280, -448)
+metadata/LAYERS = 2
 
 [node name="Tile40" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1344, -320)
+metadata/LAYERS = 2
 
 [node name="Tile195" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1344, -384)
+metadata/LAYERS = 2
 
 [node name="Tile579" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1408, -384)
+metadata/LAYERS = 2
 
 [node name="Tile196" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1344, -448)
+metadata/LAYERS = 2
 
 [node name="Tile517" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1408, -320)
+metadata/LAYERS = 2
 
 [node name="Tile370" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1408, -448)
+metadata/LAYERS = 2
 
 [node name="Tile41" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1472, -320)
+metadata/LAYERS = 2
 
 [node name="Tile197" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1472, -384)
+metadata/LAYERS = 2
 
 [node name="Tile580" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1536, -384)
+metadata/LAYERS = 2
 
 [node name="Tile198" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1472, -448)
+metadata/LAYERS = 2
 
 [node name="Tile518" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1536, -320)
+metadata/LAYERS = 2
 
 [node name="Tile371" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1536, -448)
+metadata/LAYERS = 2
 
 [node name="Tile581" parent="Tiles" instance=ExtResource("3_ap5sr")]
 position = Vector2(1280, -576)
